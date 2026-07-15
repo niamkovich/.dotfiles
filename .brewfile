@@ -25,6 +25,7 @@ cask 'claude-code'
 cask 'reactotron'
 cask 'redis-insight'
 cask 'tablepro'
+cask 'zulu@17'
 
 # --- Shared across machine users
 
