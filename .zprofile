@@ -73,3 +73,6 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 # Masetro
 
 export PATH=$PATH:$HOME/.maestro/bin
+
+# uv
+export PATH="/Users/listapad/.local/share/../bin:$PATH"

@@ -26,6 +26,10 @@ cask 'reactotron'
 cask 'redis-insight'
 cask 'tablepro'
 cask 'zulu@17'
+cask 'zed'
+cask 'dbeaver-community'
+cask 'docker-desktop'
+cask 'clickup'
 
 # --- Shared across machine users
 
@@ -71,5 +75,7 @@ brew 'mobile-dev-inc/tap/maestro'
 brew 'oven-sh/bun/bun'
 brew 'glow' # Render markdown on the CLI
 brew 'litecli' # CLI for SQLite Databases with auto-completion and syntax highlighting
+brew 'uv' # uv is a fast Python package manager by Astral.
+brew 'postgresql@18'
 
 # mas 'Xcode', id: 497799835

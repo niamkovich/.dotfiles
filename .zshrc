@@ -27,6 +27,9 @@ export VI_MODE_CURSOR_NORMAL=3
 export VI_MODE_CURSOR_VISUAL=4
 export VI_MODE_SET_CURSOR=true
 
+# Load local secrets (gitignored) — see .zsh_secrets.example
+[ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
+
 alias vim=nvim 
 alias l="eza -la"
 alias ll="eza -la -T -L=2"
