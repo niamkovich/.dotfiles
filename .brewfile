@@ -30,6 +30,7 @@ cask 'zed'
 cask 'dbeaver-community'
 cask 'docker-desktop'
 cask 'clickup'
+cask 'superwhisper'
 
 # --- Shared across machine users
 
