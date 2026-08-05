@@ -9,8 +9,7 @@
 # options that they want to change from the default.
 #
 # Run `ghostty +show-config --default --docs` to view a list of
-# all available config options and their default values.
-# Additionally, each config option is also explained in detail
+# all available config options and their default values. Additionally, each config option is also explained in detail
 # on Ghostty's website, at https://ghostty.org/docs/config.
 #
 # Ghostty can reload the configuration while running by using the menu
@@ -47,7 +46,7 @@
 
 
 # THEME
-theme = Rose Pine Dawn
+theme = Rose Pine
 
 # WINDOW
 maximize = true
@@ -58,9 +57,9 @@ window-padding-color = extend-always
 macos-titlebar-style = hidden
 
 # FONT
-font-family = 0xProto Nerd Font Mono
-font-style = Bold
-font-size = 12
+font-family = 0xProto Nerd Font
+# font-style = Bold
+font-size = 11
 
 font-feature = +calt
 

@@ -33,6 +33,7 @@ export VI_MODE_SET_CURSOR=true
 alias vim=nvim 
 alias l="eza -la"
 alias ll="eza -la -T -L=2"
+alias pinentry='pinentry-mac'
 
 
 # Helper functions:
