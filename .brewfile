@@ -20,6 +20,10 @@ cask 'zulu@17'
 cask 'dbeaver-community'
 cask 'docker-desktop'
 
+cask 'chatgpt'
+cask 'claude'
+cask 'opencode-desktop'
+
 # --- Shared across machine users
 
 cask 'qbittorrent', args: { appdir: '/Applications' }
