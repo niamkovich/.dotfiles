@@ -68,5 +68,6 @@ brew 'postgresql@18'
 brew 'flyctl'
 brew 'pinentry-mac'
 brew 'pinentry-touchid'
+brew 'gh'
 
 # mas 'Xcode', id: 497799835
