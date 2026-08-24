@@ -31,6 +31,7 @@ cask 'maintenance', args: { appdir: '/Applications' }
 
 # --- Brews
 
+brew 'ansible'
 brew 'nvm'
 brew 'eza'
 brew 'tmux'
