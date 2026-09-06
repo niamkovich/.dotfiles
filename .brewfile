@@ -1,6 +1,7 @@
 tap 'anomalyco/tap'
 tap 'oven-sh/bun'
 tap 'jorgelbg/tap'
+tap 'mobile-dev-inc/tap'
 
 cask_args appdir: '~/Applications'
 
@@ -70,5 +71,6 @@ brew 'flyctl'
 brew 'pinentry-mac'
 brew 'pinentry-touchid'
 brew 'gh'
+brew 'mobile-dev-inc/tap/maestro'
 
 # mas 'Xcode', id: 497799835
