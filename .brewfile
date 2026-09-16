@@ -63,7 +63,7 @@ brew 'anomalyco/tap/opencode'
 brew 'wget'
 brew 'luarocks'
 brew 'tree-sitter-cli'
-brew 'oven-sh/bun/bun'
+brew 'oven-sh/bun/bun@1.3.14'
 brew 'litecli' # CLI for SQLite Databases with auto-completion and syntax highlighting
 brew 'uv' # uv is a fast Python package manager by Astral.
 brew 'postgresql@18'

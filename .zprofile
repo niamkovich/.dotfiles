@@ -53,14 +53,6 @@ export GPG_TTY=$(tty)
 
 export PATH="$PATH:/Users/listapad/Applications/Obsidian.app/Contents/MacOS"
 
-# pnpm
-
-export PNPM_HOME="/Users/listapad/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
 # Sqlite
 
 # sqlite is keg-only, which means it was not symlinked into /opt/homebrew,
