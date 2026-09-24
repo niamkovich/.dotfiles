@@ -33,14 +33,16 @@ autoload -Uz compinit; compinit
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source "$HOME/.dotfiles/zsh_tool/git_shortcuts.zsh"
-source "$HOME/.dotfiles/zsh_tool/colored_man_pages.zsh"
-source "$HOME/.dotfiles/zsh_tool/z/z.zsh"
+source "$HOME/zsh_tool/git_shortcuts.zsh"
+source "$HOME/zsh_tool/colored_man_pages.zsh"
+source "$HOME/zsh_tool/z/z.zsh"
 
 alias vim=nvim 
 alias l="eza -la"
 alias ll="eza -la -T -L=2"
 alias pinentry='pinentry-mac'
+alias grep="grep --color"
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 
 eval "$(starship init zsh)"

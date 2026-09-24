@@ -1,2 +1,12 @@
-# Local secrets — never commit
-/.zsh_secrets
+# Ignore everything in $HOME by default
+*
+
+# Allow directories so git will descend into them
+!.config/
+
+
+# Now allow the specific dotfiles you want tracked
+!.tmux.conf
+!.zprofile
+!.zshrc
+!opencode.json
