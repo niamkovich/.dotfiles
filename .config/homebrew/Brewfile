@@ -1,0 +1,102 @@
+# tap 'anomalyco/tap'
+tap 'oven-sh/bun'
+tap 'jorgelbg/tap'
+# tap 'mobile-dev-inc/tap'
+
+cask_args appdir: '~/Applications'
+
+# =====================================================
+# === CASKS ===========================================
+# =====================================================
+
+cask 'vlc'
+cask 'telegram'
+cask 'obsidian'
+cask 'google-chrome'
+cask 'icon-composer'
+cask 'font-0xproto-nerd-font'
+cask 'font-fira-mono-nerd-font'
+cask 'ghostty'
+cask 'claude-code'
+
+# cask 'obs'
+# cask 'tablepro'
+# cask 'zulu@17'
+# cask 'dbeaver-community'
+# cask 'docker-desktop'
+# cask 'slack'
+# cask 'chatgpt'
+# cask 'claude'
+# cask 'opencode-desktop'
+# cask 'qbittorrent'
+# cask 'calibre'
+
+# =====================================================
+# === BREWS ===========================================
+# =====================================================
+
+## Shell utils:
+
+brew 'eza'
+brew 'zsh-autosuggestions'
+brew 'starship'
+brew 'tmux'
+
+## vim & utils and deps:
+
+brew 'nvim'
+brew 'luarocks'
+brew 'tree-sitter-cli'
+brew 'fd'
+brew 'ripgrep'
+# brew 'fzf'
+
+## Tools:
+
+# brew 'ansible' # Automate deployment, configuration, and upgrading
+# brew 'nmap'
+# brew 'httpie'
+# brew 'htop'
+# brew 'ipmitool' # Utility for IPMI control with kernel driver or LAN interface
+# brew 'scrcpy' # Display and control your Android device
+# brew 'unar'
+# brew 'unzip'
+
+## Remote control tools:
+
+brew 'flyctl'
+# brew 'gh'
+
+## Package managers and version controls:
+
+brew 'nvm'
+brew 'bun@1.3.14'
+brew 'mas' # Mac App Store command-line interface
+# brew 'rbenv'
+# brew 'pyenv'
+# brew 'jenv'
+# brew 'uv' # uv is a fast Python package manager by Astral.
+# brew 'pnpm'
+
+## Other:
+
+# brew 'watchman'
+# brew 'ruby-build'
+# brew 'ios-deploy'
+# brew 'redis'
+# brew 'anomalyco/tap/opencode'
+# brew 'wget'
+# brew 'litecli' # CLI for SQLite Databases with auto-completion and syntax highlighting
+# brew 'postgresql@18'
+# brew 'mobile-dev-inc/tap/maestro'
+brew 'gnupg'
+brew 'pinentry-mac' # Pinentry for GPG on Mac
+brew 'pinentry-touchid'
+
+# =====================================================
+# === App Store Apps ==================================
+# =====================================================
+
+mas 'Xcode', id: 497799835
+
+
