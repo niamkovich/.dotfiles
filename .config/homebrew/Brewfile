@@ -61,6 +61,7 @@ brew 'ripgrep'
 # brew 'scrcpy' # Display and control your Android device
 # brew 'unar'
 # brew 'unzip'
+brew 'bat'
 
 ## Remote control tools:
 

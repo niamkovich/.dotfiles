@@ -3,6 +3,9 @@
 
 # Allow directories so git will descend into them
 !.config/
+!.config/*
+!zsh_tool/
+!zsh_tool/*
 
 
 # Now allow the specific dotfiles you want tracked
