@@ -6,6 +6,10 @@
 export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
+
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+fpath=("$HOME/zsh_tool/z" $fpath)
+
 autoload -U promptinit; promptinit
 autoload -U colors; colors
 
@@ -32,10 +36,10 @@ autoload -Uz compinit; compinit
 
 ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source "$HOME/zsh_tool/git_shortcuts.zsh"
 source "$HOME/zsh_tool/colored_man_pages.zsh"
 source "$HOME/zsh_tool/z/z.zsh"
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
 #

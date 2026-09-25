@@ -3,13 +3,17 @@
 
 # Allow directories so git will descend into them
 !.config/
-!.config/*
 !zsh_tool/
-!zsh_tool/*
+!.gnupg/
 
 
 # Now allow the specific dotfiles you want tracked
+!zsh_tool/*
+!.config/*
+!.gnupg/gpg-agent.conf
+
 !.tmux.conf
 !.zprofile
 !.zshrc
 !opencode.json
+!README.md
