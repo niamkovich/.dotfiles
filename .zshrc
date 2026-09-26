@@ -60,5 +60,8 @@ alias dgd="dotfiles diff"
 alias dgl="dotfiles log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an> %Cgreen(%cr)%Creset' --abbrev-commit"
 alias dgll="dotfiles log --stat=80"
 
+# Load local secrets (gitignored) — see .zsh_secrets.example
+[ -f ~/.zsh_secrets ] && source ~/.zsh_secrets
+
 
 eval "$(starship init zsh)"
