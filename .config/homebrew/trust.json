@@ -1,0 +1,10 @@
+{
+  "trustedtaps": [
+    "driceroland/tap",
+    "jorgelbg/tap",
+    "oven-sh/bun"
+  ],
+  "trustedcasks": [
+    "driceroland/tap/search"
+  ]
+}

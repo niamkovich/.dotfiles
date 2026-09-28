@@ -20,7 +20,7 @@ cask 'font-fira-mono-nerd-font'
 cask 'ghostty'
 cask 'claude-code'
 cask 'search'
-cask 'driceroland/tap/search'
+cask 'driceroland/tap/search', trusted: true
 
 # cask 'obs'
 # cask 'tablepro'
@@ -75,7 +75,7 @@ brew 'flyctl'
 ## Package managers and version controls:
 
 brew 'nvm'
-brew 'bun@1.3.14'
+brew 'bun@1.3.14', trusted: true
 brew 'mas' # Mac App Store command-line interface
 # brew 'rbenv'
 # brew 'pyenv'
@@ -96,7 +96,7 @@ brew 'mas' # Mac App Store command-line interface
 # brew 'mobile-dev-inc/tap/maestro'
 brew 'gnupg'
 brew 'pinentry-mac' # Pinentry for GPG on Mac
-brew 'pinentry-touchid'
+brew 'pinentry-touchid', trusted: true
 
 # =====================================================
 # === App Store Apps ==================================
