@@ -21,12 +21,12 @@ cask 'ghostty'
 cask 'claude-code'
 cask 'search'
 cask 'driceroland/tap/search', trusted: true
+cask 'docker-desktop'
 
 # cask 'obs'
 # cask 'tablepro'
 # cask 'zulu@17'
 # cask 'dbeaver-community'
-# cask 'docker-desktop'
 # cask 'slack'
 # cask 'chatgpt'
 # cask 'claude'
