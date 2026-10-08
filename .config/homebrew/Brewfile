@@ -1,7 +1,7 @@
 # tap 'anomalyco/tap'
 tap 'oven-sh/bun'
 tap 'jorgelbg/tap'
-tap 'driceroland/tap'
+# tap 'driceroland/tap'
 # tap 'mobile-dev-inc/tap'
 
 cask_args appdir: '~/Applications'
@@ -19,7 +19,7 @@ cask 'font-0xproto-nerd-font'
 cask 'font-fira-mono-nerd-font'
 cask 'ghostty'
 cask 'claude-code'
-cask 'search'
+# cask 'search'
 cask 'driceroland/tap/search', trusted: true
 cask 'docker-desktop'
 
@@ -103,5 +103,3 @@ brew 'pinentry-touchid', trusted: true
 # =====================================================
 
 mas 'Xcode', id: 497799835
-
-
