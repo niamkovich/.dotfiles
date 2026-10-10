@@ -29,7 +29,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # RBENV
 
-# export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
 
 # JENV
 
@@ -38,9 +38,9 @@ export NVM_DIR="$HOME/.nvm"
 
 # PYENV
 
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # ANDROID
 
@@ -53,10 +53,8 @@ export NVM_DIR="$HOME/.nvm"
 
 export GPG_TTY=$(tty)
 
-
 # Added by Obsidian
-
-# export PATH="$PATH:/Users/listapad/Applications/Obsidian.app/Contents/MacOS"
+export PATH="$PATH:/Users/listapad/Applications/Obsidian.app/Contents/MacOS"
 
 # Sqlite
 
@@ -68,8 +66,8 @@ export GPG_TTY=$(tty)
 # export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # Masetro
-
-# export PATH=$PATH:$HOME/.maestro/bin
+export MAESTRO_CLI_NO_ANALYTICS=true
+export PATH=$PATH:$HOME/.maestro/bin
 
 # uv
 # export PATH="/Users/listapad/.local/share/../bin:$PATH"
