@@ -4,5 +4,9 @@
   ],
   "trustedformulae": [
     "mobile-dev-inc/tap/maestro"
+  ],
+  "trustedtaps": [
+    "jorgelbg/tap",
+    "oven-sh/bun"
   ]
 }

@@ -29,8 +29,7 @@ cask 'dbeaver-community'
 # cask 'slack'
 # cask 'chatgpt'
 # cask 'claude'
-# cask 'qbittorrent'
-# cask 'calibre'
+cask 'calibre'
 
 # =====================================================
 # === BREWS ===========================================
