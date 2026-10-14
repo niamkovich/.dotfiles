@@ -29,7 +29,6 @@ cask 'dbeaver-community'
 # cask 'slack'
 # cask 'chatgpt'
 # cask 'claude'
-# cask 'opencode-desktop'
 # cask 'qbittorrent'
 # cask 'calibre'
 
@@ -92,8 +91,8 @@ brew 'pinentry-mac' # Pinentry for GPG on Mac
 brew 'pinentry-touchid', trusted: true
 brew 'ruby-build'
 brew 'ios-deploy'
+brew 'opencode'
 # brew 'redis'
-# brew 'anomalyco/tap/opencode'
 # brew 'litecli' # CLI for SQLite Databases with auto-completion and syntax highlighting
 # brew 'postgresql@18'
 

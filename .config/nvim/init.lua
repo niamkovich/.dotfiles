@@ -118,6 +118,14 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function() vim.hl.on_yank() end,
 })
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'markdown',
+  callback = function()
+    vim.opt_local.wrap = true
+    vim.opt_local.linebreak = true -- break at word boundaries, not mid-word
+  end,
+})
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 -- Bootstrap lazy.nvim
@@ -744,11 +752,8 @@ require('lazy').setup({
   {
     'rose-pine/neovim',
     name = 'rose-pine',
-    config = function() vim.cmd 'colorscheme rose-pine' end,
+    config = function() vim.cmd 'colorscheme rose-pine-dawn' end,
   },
-
-  -- Highlight todo, notes, etc in comments
-  { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
 
