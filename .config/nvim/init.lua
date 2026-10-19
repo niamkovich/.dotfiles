@@ -17,6 +17,11 @@ vim.o.splitright = true
 vim.o.splitbelow = true
 vim.o.wrap = false
 
+vim.o.foldmethod = 'expr'
+vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.o.foldlevelstart = 99 -- при открытии файла всё развёрнуто
+vim.o.foldtext = '' -- свёрнутая строка показывается с подсветкой синтаксиса
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
@@ -752,7 +757,14 @@ require('lazy').setup({
   {
     'rose-pine/neovim',
     name = 'rose-pine',
-    config = function() vim.cmd 'colorscheme rose-pine-dawn' end,
+    config = function()
+      require('rose-pine').setup {
+        highlight_groups = {
+          ['@comment.documentation'] = { fg = 'gold', italic = true },
+        },
+      }
+      vim.cmd 'colorscheme rose-pine'
+    end,
   },
 
   { 'akinsho/bufferline.nvim', version = '*', dependencies = 'nvim-tree/nvim-web-devicons' },
