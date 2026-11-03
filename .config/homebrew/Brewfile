@@ -1,7 +1,7 @@
 tap 'oven-sh/bun'
 tap 'jorgelbg/tap'
 tap 'mobile-dev-inc/tap'
-# tap 'anomalyco/tap'
+tap 'anomalyco/tap'
 # tap 'driceroland/tap'
 
 cask_args appdir: '~/Applications'
@@ -23,6 +23,7 @@ cask 'driceroland/tap/search', trusted: true
 cask 'docker-desktop'
 cask 'zulu@17'
 cask 'dbeaver-community'
+cask 'anomalyco/tap/hex'
 # cask 'search'
 # cask 'obs'
 # cask 'tablepro'
@@ -62,6 +63,7 @@ brew 'nmap'
 brew 'httpie'
 brew 'unar'
 brew 'unzip'
+brew 'anomalyco/tap/opencode-v2'
 # brew 'ansible' # Automate deployment, configuration, and upgrading
 # brew 'ipmitool' # Utility for IPMI control with kernel driver or LAN interface
 # brew 'scrcpy' # Display and control your Android device
@@ -90,7 +92,6 @@ brew 'pinentry-mac' # Pinentry for GPG on Mac
 brew 'pinentry-touchid', trusted: true
 brew 'ruby-build'
 brew 'ios-deploy'
-brew 'opencode'
 # brew 'redis'
 # brew 'litecli' # CLI for SQLite Databases with auto-completion and syntax highlighting
 # brew 'postgresql@18'

@@ -22,6 +22,23 @@ vim.o.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
 vim.o.foldlevelstart = 99 -- при открытии файла всё развёрнуто
 vim.o.foldtext = '' -- свёрнутая строка показывается с подсветкой синтаксиса
 
+-- Запоминать свёрнутые блоки и позицию курсора для каждого файла (хранится в ~/.local/state/nvim/view)
+vim.o.viewoptions = 'folds,cursor'
+local view_group = vim.api.nvim_create_augroup('remember-folds', { clear = true })
+local function is_real_file(buf) return vim.bo[buf].buftype == '' and vim.api.nvim_buf_get_name(buf) ~= '' end
+vim.api.nvim_create_autocmd({ 'BufWinLeave', 'BufWritePost' }, {
+  group = view_group,
+  callback = function(args)
+    if is_real_file(args.buf) then pcall(vim.cmd.mkview, { mods = { emsg_silent = true } }) end
+  end,
+})
+vim.api.nvim_create_autocmd('BufWinEnter', {
+  group = view_group,
+  callback = function(args)
+    if is_real_file(args.buf) then pcall(vim.cmd.loadview, { mods = { emsg_silent = true } }) end
+  end,
+})
+
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
@@ -761,6 +778,8 @@ require('lazy').setup({
       require('rose-pine').setup {
         highlight_groups = {
           ['@comment.documentation'] = { fg = 'gold', italic = true },
+          ScopeBg = { bg = 'surface' }, -- фон блока, у якім стаіць курсор
+          ScopeEdge = { sp = 'iris', underline = true }, -- падкрэсліванне пачатку і канца блока
         },
       }
       vim.cmd 'colorscheme rose-pine'

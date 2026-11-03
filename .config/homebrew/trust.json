@@ -1,11 +1,14 @@
 {
   "trustedcasks": [
+    "anomalyco/tap/hex",
     "driceroland/tap/search"
   ],
   "trustedformulae": [
+    "anomalyco/tap/opencode-v2",
     "mobile-dev-inc/tap/maestro"
   ],
   "trustedtaps": [
+    "anomalyco/tap",
     "jorgelbg/tap",
     "oven-sh/bun"
   ]
